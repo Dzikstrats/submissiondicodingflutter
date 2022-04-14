@@ -71,7 +71,7 @@ class Home extends StatelessWidget {
               ),
               Container(
                 alignment: Alignment.topLeft,
-                margin: EdgeInsets.all(10),
+                margin: EdgeInsets.only(top: MediaQuery.of(context).size.height * 0.0, left: 8,),
                 child: Text(
                   "List Tumbuhan", style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
                 ),
@@ -79,7 +79,7 @@ class Home extends StatelessWidget {
             ],
           ),
           Container(
-            margin: EdgeInsets.only(top: 260),
+            margin: EdgeInsets.only(top: MediaQuery.of(context).size.height * 0.4),
             child: ListView.builder(
               itemBuilder: (context, index) {
                 final ListTumbuhan tumbuhan = tumbuhanList[index];
